@@ -3,6 +3,8 @@
 # Abstract
 We often summarize a multi-party conversation in two stages: chunking with homogeneous units and summarizing the chunks. Thus, we hypothesize that there exists a correlation between homogeneous speaker chunking and overall summarization tasks. In this work, we investigate the effectiveness of a multifaceted approach that simultaneously produces summaries of medical concerns, doctor impressions, and an overall view. We introduce a multi-modal, multi-tasking, knowledge-infused medical dialogue summary generation (MMK-Summation) model, which is incorporated with adapter-based fine-tuning through a gated mechanism for multi-modal information integration. The model, MMK-Summation, takes dialogues as input, extracts pertinent external knowledge based on the context, integrates the knowledge and visual cues from the dialogues into the textual content, and ultimately generates concise summaries encompassing medical concerns, doctor impressions, and a comprehensive overview. The introduced model surpasses multiple baselines and traditional summarization models across all evaluation metrics (including human evaluation), which firmly demonstrates the efficacy of the knowledge-guided multi-tasking, multimodal medical conversation summarization
 
+## Code
+
 ### Please create a new environment for the dependencies using the following command:
 
 	conda env create -f environment.yml
@@ -30,8 +32,19 @@ We often summarize a multi-party conversation in two stages: chunking with homog
     python MM-MDS with MCS.py
     -------------------------
 
+## How to Access the Dataset
+
+1. **Fill Out the Request Form**: To access the dataset, you need to submit a request through our [Google Form](https://forms.gle/C5q7jDprPGsCuYcD6).
+
+2. **Review and Approval**: After submitting the form, your request will be reviewed. If approved, you will receive an email with a link to download the dataset.
+
+3. **Terms of Use**: By requesting access, you agree to:
+    - Use the dataset solely for non-commercial, educational, and research purposes.
+    - Attribute the creators of this resource in any works (publications, presentations, or other public dissemination) utilizing the dataset.
+    - Not disseminate the dataset without prior permission from the appropriate authorities.
+
 # Citation
-If you find this code useful in your research, please consider citing:
+If you find this work useful in your research, please consider citing:
 ```
 @article{saha2024two,
   title={Two eyes, Two views, and finally, One summary! Towards Multi-modal Multi-tasking Knowledge-Infused Medical Dialogue Summarization},
